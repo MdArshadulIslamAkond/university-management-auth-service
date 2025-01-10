@@ -14,7 +14,7 @@ export default [
       "no-unused-vars": "error",
       "no-console": "error",
       "no-undef": "error",
-      "no-unused-expression": "error",
+      "no-unused-expressions": "error",
       "no-unreachable": "error",
       "prefer-const": ["error", { ignoreReadBeforeAssign: true }],
       "jsdoc/require-description": "error",
