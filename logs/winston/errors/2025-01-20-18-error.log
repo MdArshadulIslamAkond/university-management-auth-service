@@ -1,0 +1,32 @@
+{
+  issues: [
+    {
+      code: 'custom',
+      message: 'Either both title and code should be provided or neither',
+      path: []
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'Error creating user [\n' +
+    '  {\n' +
+    '    "code": "custom",\n' +
+    '    "message": "Either both title and code should be provided or neither",\n' +
+    '    "path": []\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "custom",\n' +
+    '    "message": "Either both title and code should be provided or neither",\n' +
+    '    "path": []\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:55:31)\n' +
+    '    at ZodEffects.parseAsync (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:196:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-20 18:48:33'
+}

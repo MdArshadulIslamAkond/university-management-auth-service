@@ -1,0 +1,12 @@
+{
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0.jp5aibk.mongodb.net',
+  level: 'error',
+  message: 'Failed to connect to the MongoDB server querySrv ECONNREFUSED _mongodb._tcp.cluster0.jp5aibk.mongodb.net',
+  stack: 'Error: querySrv ECONNREFUSED _mongodb._tcp.cluster0.jp5aibk.mongodb.net\n' +
+    '    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:291:17)',
+  label: 'right meow!',
+  timestamp: '2025-01-20 17:10:00'
+}
