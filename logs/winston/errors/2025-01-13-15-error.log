@@ -1,0 +1,359 @@
+{
+  level: 'error',
+  message: "Error creating user Cannot set properties of undefined (setting 'id')",
+  stack: "TypeError: Cannot set properties of undefined (setting 'id')\n" +
+    '    at C:\\Projects\\Next level -2\\university-managemant-auth-service\\src\\app\\modules\\user\\user.service.ts:10:10\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Projects\\Next level -2\\university-managemant-auth-service\\src\\app\\modules\\user\\user.service.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-13 15:04:52'
+}
+{
+  level: 'error',
+  message: "Error creating user Cannot set properties of undefined (setting 'id')",
+  stack: "TypeError: Cannot set properties of undefined (setting 'id')\n" +
+    '    at C:\\Projects\\Next level -2\\university-managemant-auth-service\\src\\app\\modules\\user\\user.service.ts:10:10\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Projects\\Next level -2\\university-managemant-auth-service\\src\\app\\modules\\user\\user.service.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-13 15:07:46'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'body', 'role' ],
+      message: 'role is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'Error creating user [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "role is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "role"\n' +
+    '    ],\n' +
+    '    "message": "role is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:55:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:196:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-13 15:17:18'
+}
+{
+  level: 'error',
+  message: "Error creating user Cannot set properties of undefined (setting 'id')",
+  stack: "TypeError: Cannot set properties of undefined (setting 'id')\n" +
+    '    at C:\\Projects\\Next level -2\\university-managemant-auth-service\\src\\app\\modules\\user\\user.service.ts:10:10\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Projects\\Next level -2\\university-managemant-auth-service\\src\\app\\modules\\user\\user.service.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-13 15:17:36'
+}
+{
+  level: 'error',
+  message: "Error creating user Cannot set properties of undefined (setting 'id')",
+  stack: "TypeError: Cannot set properties of undefined (setting 'id')\n" +
+    '    at C:\\Projects\\Next level -2\\university-managemant-auth-service\\src\\app\\modules\\user\\user.service.ts:10:10\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Projects\\Next level -2\\university-managemant-auth-service\\src\\app\\modules\\user\\user.service.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-13 15:21:01'
+}
+{
+  level: 'error',
+  message: "Error creating user Cannot set properties of undefined (setting 'id')",
+  stack: "TypeError: Cannot set properties of undefined (setting 'id')\n" +
+    '    at C:\\Projects\\Next level -2\\university-managemant-auth-service\\src\\app\\modules\\user\\user.service.ts:10:10\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Projects\\Next level -2\\university-managemant-auth-service\\src\\app\\modules\\user\\user.service.ts:5:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-13 15:21:07'
+}
+{
+  issues: [
+    {
+      received: '04',
+      code: 'invalid_enum_value',
+      options: [ '01', '02', '03' ],
+      path: [ 'body', 'code' ],
+      message: "Invalid enum value. Expected '01' | '02' | '03', received '04'"
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'Error creating user [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:55:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:196:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-13 15:31:37'
+}
+{
+  issues: [
+    {
+      received: '04',
+      code: 'invalid_enum_value',
+      options: [ '01', '02', '03' ],
+      path: [ 'body', 'code' ],
+      message: "Invalid enum value. Expected '01' | '02' | '03', received '04'"
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'Error creating user [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:55:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:196:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-13 15:34:43'
+}
+{
+  issues: [
+    {
+      received: '04',
+      code: 'invalid_enum_value',
+      options: [ '01', '02', '03' ],
+      path: [ 'body', 'code' ],
+      message: "Invalid enum value. Expected '01' | '02' | '03', received '04'"
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'Error creating user [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:55:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:196:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-13 15:34:49'
+}
+{
+  issues: [
+    {
+      received: '04',
+      code: 'invalid_enum_value',
+      options: [ '01', '02', '03' ],
+      path: [ 'body', 'code' ],
+      message: "Invalid enum value. Expected '01' | '02' | '03', received '04'"
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'Error creating user [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:55:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:196:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-13 15:34:56'
+}
+{
+  issues: [
+    {
+      received: '04',
+      code: 'invalid_enum_value',
+      options: [ '01', '02', '03' ],
+      path: [ 'body', 'code' ],
+      message: "Invalid enum value. Expected '01' | '02' | '03', received '04'"
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'Error creating user [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:55:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:196:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-01-13 15:35:35'
+}
