@@ -5,13 +5,14 @@ import cors from 'cors'
 import globalErrorHandler from './app/middleware/globalErrorHandler'
 import Routers from './app/routes'
 import httpStatus from 'http-status'
-
+import cookieParser from 'cookie-parser'
 // import ApiError from './errors/ApiError'
 const app: Application = express()
 // const port = 3000
 // middleware
 app.use(cors())
 // parser
+app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 

@@ -1,0 +1,176 @@
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'cookies', 'refreshToken' ],
+      message: 'Refresh Token is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'Error creating user [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "cookies",\n' +
+    '      "refreshToken"\n' +
+    '    ],\n' +
+    '    "message": "Refresh Token is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "cookies",\n' +
+    '      "refreshToken"\n' +
+    '    ],\n' +
+    '    "message": "Refresh Token is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:55:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:196:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-02-07 12:07:07'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'cookies', 'refreshToken' ],
+      message: 'Refresh Token is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'Error creating user [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "cookies",\n' +
+    '      "refreshToken"\n' +
+    '    ],\n' +
+    '    "message": "Refresh Token is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "cookies",\n' +
+    '      "refreshToken"\n' +
+    '    ],\n' +
+    '    "message": "Refresh Token is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:55:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:196:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-02-07 12:08:40'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'cookies', 'refreshToken' ],
+      message: 'Refresh Token is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'Error creating user [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "cookies",\n' +
+    '      "refreshToken"\n' +
+    '    ],\n' +
+    '    "message": "Refresh Token is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "cookies",\n' +
+    '      "refreshToken"\n' +
+    '    ],\n' +
+    '    "message": "Refresh Token is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:55:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:196:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-02-07 12:08:48'
+}
+{
+  issues: [
+    {
+      code: 'invalid_type',
+      expected: 'string',
+      received: 'undefined',
+      path: [ 'cookies', 'refreshToken' ],
+      message: 'Refresh Token is required'
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: 'Error creating user [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "cookies",\n' +
+    '      "refreshToken"\n' +
+    '    ],\n' +
+    '    "message": "Refresh Token is required"\n' +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "code": "invalid_type",\n' +
+    '    "expected": "string",\n' +
+    '    "received": "undefined",\n' +
+    '    "path": [\n' +
+    '      "cookies",\n' +
+    '      "refreshToken"\n' +
+    '    ],\n' +
+    '    "message": "Refresh Token is required"\n' +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:55:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Projects\\Next level -2\\university-managemant-auth-service\\node_modules\\zod\\lib\\types.js:196:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'right meow!',
+  timestamp: '2025-02-07 12:10:47'
+}
