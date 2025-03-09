@@ -5,7 +5,7 @@ import config from '../../config'
 import { IGenericErrorMessage } from '../../interfaces/error'
 import handleValidatorError from '../../errors/handleValidatorError'
 import ApiError from '../../errors/ApiError'
-import { errorlogger } from '../../shared/logger'
+// import { errorlogger } from '../../shared/logger'
 import { ZodError } from 'zod'
 import handleZodError from '../../errors/handleZodError'
 import handleCastError from '../../errors/handleCastError'
@@ -13,7 +13,7 @@ import handleCastError from '../../errors/handleCastError'
 const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
   config.env === 'development'
     ? console.log('globalErrorHandler', error)
-    : errorlogger.error('globalErrorHandler', error)
+    : console.log('globalErrorHandler', error)
   let statusCode = 500
   let message = 'Internal Server Error!'
   let errorMessages: IGenericErrorMessage[] = []
