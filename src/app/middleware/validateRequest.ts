@@ -1,5 +1,5 @@
 import { AnyZodObject, ZodEffects } from 'zod'
-import { errorlogger } from '../../shared/logger'
+// import { errorlogger } from '../../shared/logger'
 import { NextFunction, Request, Response } from 'express'
 
 const validateRequest =
@@ -14,7 +14,7 @@ const validateRequest =
       })
       next()
     } catch (error) {
-      errorlogger.error('Error creating user', error)
+      console.log('Error creating user', error)
 
       next(error)
     }

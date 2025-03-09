@@ -9,20 +9,26 @@ export default [
   {files: ["**/*.js"], languageOptions: {sourceType: "commonjs"}},
   {languageOptions: { globals: globals.browser }},
   {
+    // languageOptions: {
+    //   parserOptions: {
+    //     sourceType: "module",
+    //   },
+    // },
     rules: {
       eqeqeq: "off",
       "no-unused-vars": "error",
-      "no-console": "error",
+      // "no-console": "error",
       "no-undef": "error",
       "no-unused-expressions": "error",
       "no-unreachable": "error",
       "prefer-const": ["error", { ignoreReadBeforeAssign: true }],
       "jsdoc/require-description": "error",
-      "jsdoc/check-values": "error"
+      "jsdoc/check-values": "error",
+      // "@typescript-eslint/no-require-imports": "off"
     },
   },
   {
-    ignores: [".node_modules/*"]
+    ignores: [".node_modules/*", "dist/*"]
   },
   {
     plugins: {

@@ -1,0 +1,60 @@
+{
+  message: 'Connected to the MongoDB server successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2025-02-07 17:07:08'
+}
+{
+  message: 'Example app listening on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2025-02-07 17:07:08'
+}
+{
+  message: 'Connected to the MongoDB server successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2025-02-07 17:09:57'
+}
+{
+  message: 'Example app listening on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2025-02-07 17:09:57'
+}
+{
+  message: 'Connected to the MongoDB server successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2025-02-07 17:10:29'
+}
+{
+  message: 'Example app listening on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2025-02-07 17:10:29'
+}
+{
+  message: 'Connected to the MongoDB server successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2025-02-07 17:11:13'
+}
+{
+  message: 'Example app listening on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2025-02-07 17:11:13'
+}
+{
+  message: 'Connected to the MongoDB server successfully',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2025-02-07 17:23:26'
+}
+{
+  message: 'Example app listening on port 5000',
+  level: 'info',
+  label: 'right meow!',
+  timestamp: '2025-02-07 17:23:26'
+}
