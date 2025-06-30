@@ -10,7 +10,7 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
   //   console.log(req.body)
   const { ...loginData } = req.body
   const result = await AuthService.loginUser(loginData)
-  const { refreshAccessToken, ...others } = result
+  const { refreshAccessToken } = result
   // set refresh token into cookie
   const cookieOptions = {
     httpOnly: true,
@@ -23,7 +23,7 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
     statusCode: httpStatus.OK,
     success: true,
     message: 'User logged in successfully',
-    data: others,
+    data: result,
   })
 })
 const refreshToken = catchAsync(async (req: Request, res: Response) => {
@@ -58,9 +58,31 @@ const passwordChange = catchAsync(async (req: Request, res: Response) => {
     message: 'User password change in successfully',
   })
 })
+const forgotPass = catchAsync(async (req: Request, res: Response) => {
+  await AuthService.forgotPass(req.body)
+
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: 'Check your email!',
+  })
+})
+
+const resetPassword = catchAsync(async (req: Request, res: Response) => {
+  const token = req.headers.authorization || ''
+  await AuthService.resetPassword(req.body, token)
+
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: 'Account recovered!',
+  })
+})
 
 export const AuthController = {
   loginUser,
   refreshToken,
   passwordChange,
+  forgotPass,
+  resetPassword,
 }

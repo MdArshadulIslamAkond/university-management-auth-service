@@ -7,7 +7,11 @@ import ApiError from '../../../errors/ApiError'
 import { User } from '../user/user.model'
 import { Faculty } from './faculty.model'
 import { IFaculty, IFacultyFilters } from './faculty.interface'
-import { facultySearchableFields } from './faculty.constants'
+import {
+  EVENT_FACULTY_UPDATED,
+  facultySearchableFields,
+} from './faculty.constants'
+import { RedisClient } from '../../../shared/redis'
 
 const getAllFaculty = async (
   filters: IFacultyFilters,
@@ -92,6 +96,10 @@ const getUpdateFaculty = async (
       new: true,
     },
   )
+
+  if (result) {
+    await RedisClient.publish(EVENT_FACULTY_UPDATED, JSON.stringify(result))
+  }
   return result
 }
 const getDeleteFaculty = async (id: string): Promise<IFaculty | null> => {

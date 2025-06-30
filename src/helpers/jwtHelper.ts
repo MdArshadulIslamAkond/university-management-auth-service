@@ -10,6 +10,17 @@ const createToken = (
   }
   return jwt.sign(payload, secret, options)
 }
+const createResetToken = (
+  payload: Record<string, unknown>,
+  secret: string,
+  expiresIn: string | number,
+): string => {
+  const options: SignOptions = {
+    algorithm: 'HS256',
+    expiresIn: expiresIn as SignOptions['expiresIn'],
+  }
+  return jwt.sign(payload, secret, options)
+}
 const verify = (payload: string, secret: string): JwtPayload => {
   return jwt.verify(payload, secret) as JwtPayload
 }
@@ -17,4 +28,5 @@ const verify = (payload: string, secret: string): JwtPayload => {
 export const jwtHelpers = {
   createToken,
   verify,
+  createResetToken,
 }

@@ -28,14 +28,10 @@ router.post(
   ),
   AuthController.passwordChange,
 )
-// router.get('/', FacultyController.getAllFaculty)
 
-// router.get('/:id', FacultyController.getSingleFaculty)
-// router.patch(
-//   '/:id',
-//   validateRequest(FacultyValidation.updatedFacultyZodSchema),
-//   FacultyController.getUpdateFaculty,
-// )
-// router.delete('/:id', FacultyController.getDeleteFaculty)
+router.post('/forgot-password', AuthController.forgotPass)
 
+router.post('/reset-password', AuthController.resetPassword)
+
+router.post('/reset-password', AuthController.resetPassword)
 export const AuthRoutes = router

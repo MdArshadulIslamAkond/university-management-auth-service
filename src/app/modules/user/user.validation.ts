@@ -69,7 +69,7 @@ const createStudentZodSchema = z.object({
           required_error: 'Guardian address is required',
         }),
       }),
-      localGuarian: z.object({
+      localGuardian: z.object({
         name: z.string({
           required_error: 'Local guarantor name is required',
         }),

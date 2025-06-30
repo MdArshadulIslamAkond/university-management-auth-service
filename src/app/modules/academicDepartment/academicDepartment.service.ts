@@ -6,11 +6,14 @@ import { IPaginationOptions } from '../../../interfaces/pagination'
 import ApiError from '../../../errors/ApiError'
 import httpStatus from 'http-status'
 import {
+  AcademicDepartmentCreatedEvent,
+  AcademicDepartmentUpdatedEvent,
   IAcademicDepaetment,
   IAcademicDepartmentFilterRequest,
 } from './academicDepartment.interfaces'
 import { AcademicDepartment } from './academicDepartment.model'
 import { academicDepartmentSerarchableFields } from './academicDepartment.constants'
+import { AcademicFaculty } from '../academicFaculty/academicFaculty.model'
 
 const createDepartment = async (
   payload: IAcademicDepaetment,
@@ -102,10 +105,51 @@ const getDeleteDepaerment = async (
   return result
 }
 
+const insertIntoDBFromEvent = async (
+  e: AcademicDepartmentCreatedEvent,
+): Promise<void> => {
+  const academicFaculty = await AcademicFaculty.findOne({
+    syncId: e.academicFacultyId,
+  })
+  const payload = {
+    title: e.title,
+    academicFaculty: academicFaculty?._id,
+    syncId: e.id,
+  }
+
+  await AcademicDepartment.create(payload)
+}
+
+const updateOneInDBFromEvent = async (
+  e: AcademicDepartmentUpdatedEvent,
+): Promise<void> => {
+  const academicFaculty = await AcademicFaculty.findOne({
+    syncId: e.academicFacultyId,
+  })
+  const payload = {
+    title: e.title,
+    academicFaculty: academicFaculty?._id,
+  }
+
+  await AcademicDepartment.findOneAndUpdate(
+    { syncId: e.id },
+    {
+      $set: payload,
+    },
+  )
+}
+
+const deleteOneFromDBFromEvent = async (syncId: string): Promise<void> => {
+  await AcademicDepartment.findOneAndDelete({ syncId })
+}
+
 export const AcademicDepartmentService = {
   getAllDepartments,
   createDepartment,
   getSingleDepartment,
   getUpdateDepartment,
   getDeleteDepaerment,
+  insertIntoDBFromEvent,
+  updateOneInDBFromEvent,
+  deleteOneFromDBFromEvent,
 }

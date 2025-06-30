@@ -4,6 +4,8 @@ import { IGenericResponse } from '../../../interfaces/common'
 import { IPaginationOptions } from '../../../interfaces/pagination'
 import { academicFucultySerarchableFields } from './academicFaculty.constants'
 import {
+  AcademicFacultyCreatedEvent,
+  AcademicFacultyUpdatedEvent,
   IAcademicFaculty,
   IAcademicFacultyFilters,
 } from './academicFaculty.interfaces'
@@ -93,10 +95,39 @@ const getDeleteFaculty = async (
   return result
 }
 
+const insertIntoDBFromEvent = async (
+  e: AcademicFacultyCreatedEvent,
+): Promise<void> => {
+  await AcademicFaculty.create({
+    syncId: e.id,
+    title: e.title,
+  })
+}
+
+const updateOneInDBFromEvent = async (
+  e: AcademicFacultyUpdatedEvent,
+): Promise<void> => {
+  await AcademicFaculty.findOneAndUpdate(
+    { syncId: e.id },
+    {
+      $set: {
+        title: e.title,
+      },
+    },
+  )
+}
+
+const deleteOneFromDBFromEvent = async (syncId: string): Promise<void> => {
+  await AcademicFaculty.findOneAndDelete({ syncId })
+}
+
 export const AcademicFacultyService = {
   getAllFaculties,
   createFaculty,
   getSingleFaculty,
   getUpdateFaculty,
   getDeleteFaculty,
+  insertIntoDBFromEvent,
+  updateOneInDBFromEvent,
+  deleteOneFromDBFromEvent,
 }
