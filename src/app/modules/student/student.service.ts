@@ -3,11 +3,15 @@ import { paginationHelpers } from '../../../helpers/paginationHelper'
 import { IGenericResponse } from '../../../interfaces/common'
 import { IPaginationOptions } from '../../../interfaces/pagination'
 import { IStudent, IStudentFilters } from './student.interface'
-import { studentSearchableFields } from './student.constants'
+import {
+  EVENT_STUDENT_UPDATED,
+  studentSearchableFields,
+} from './student.constants'
 import { Student } from './student.model'
 import httpStatus from 'http-status'
 import ApiError from '../../../errors/ApiError'
 import { User } from '../user/user.model'
+import { RedisClient } from '../../../shared/redis'
 
 const getAllStudent = async (
   filters: IStudentFilters,
@@ -112,6 +116,11 @@ const getUpdateStudent = async (
       new: true,
     },
   )
+
+  if (result) {
+    await RedisClient.publish(EVENT_STUDENT_UPDATED, JSON.stringify(result))
+  }
+
   return result
 }
 const getDeleteStudent = async (id: string): Promise<IStudent | null> => {

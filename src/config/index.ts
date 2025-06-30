@@ -18,4 +18,11 @@ export default {
   },
   // jwt_cookie_name: process.env.JWT_COOKIE_NAME,
   // jwt_cookie_domain: process.env.JWT_COOKIE_DOMAIN,
+  redis: {
+    url: process.env.REDIS_URL,
+    expires_in: process.env.REDIS_TOKEN_EXPIRES_IN,
+  },
+  resetlink: process.env.RESET_PASS_UI_LINK,
+  email: process.env.EMAIL,
+  appPass: process.env.APP_PASS,
 }
